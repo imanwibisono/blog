@@ -5,7 +5,7 @@ node('master') {
       echo 'Hello World'
     }
     stage('Git Pull from Github') {
-      git credentialsId: 'github_imanwibisono', brach: "master", url: 'https://github.com/imanwibisono/landing_page.git'
+      git credentialsId: 'github_imanwibisono', brach: "master", url: 'https://github.com/imanwibisono/blog.git'
     }
       stage('Build Docker Image') {
         sh "docker build --build-arg APP_NAME=blog -t $DOCKER_REGISTRY/$DOCKER_IMAGE_NAME:p-${BUILD_NUMBER} ."   

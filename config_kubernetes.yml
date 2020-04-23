@@ -41,7 +41,7 @@ spec:
         run: p-blog-wordpress
     spec:
       containers:
-      - image: wordpress:4.8-apache
+      - image: $DOCKER_REGISTRY/$DOCKER_IMAGE_NAME:$BUILD_NUMBER
         name: p-blog-wordpress
         env:
         - name: WORDPRESS_DB_HOST
