@@ -22,7 +22,7 @@ metadata:
 type: Opaque
 data:
   DB_USER: YWRtaW4=
-  DB_PASS: V2liaXMwbjA=
+  DB_PASS: a2V0aWxlbmc=
 
 ---
 apiVersion: apps/v1
