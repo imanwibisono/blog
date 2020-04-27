@@ -22,7 +22,7 @@ metadata:
 type: Opaque
 data:
   DB_USER: YWRtaW4=
-  DB_PASS: V2liaXMwbjA=
+  DB_PASS: a2V0aWxlbmc=
 
 ---
 apiVersion: apps/v1
@@ -45,7 +45,7 @@ spec:
         name: s-blog-wordpress
         env:
         - name: WORDPRESS_DB_HOST
-          value: "db-blog.cpa5p4d4immv.ap-southeast-1.rds.amazonaws.com"
+          value: "p-db-blog.cpa5p4d4immv.ap-southeast-1.rds.amazonaws.com"
         - name: WORDPRESS_DB_USER
           value: "admin" 
         - name: WORDPRESS_DB_PASSWORD
